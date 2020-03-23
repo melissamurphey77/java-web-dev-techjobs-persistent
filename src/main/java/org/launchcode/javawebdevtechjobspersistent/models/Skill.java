@@ -29,7 +29,6 @@ public class Skill extends AbstractEntity {
 
     //validation
     public Skill(String skill, String description){
-//        this.jobs = jobs;
         this.skill = skill;
         this.description = description;
     }
