@@ -4,10 +4,19 @@ package org.launchcode.javawebdevtechjobspersistent.models;
 
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Employer extends AbstractEntity {
     //extending AbstractEntity inherits id and name automatically
+
+    @OneToMany
+    @JoinColumn
+    private List<Job> jobs= new ArrayList<>();
 
     private String location;
     //this adds location to the id and name we already have to Employer
