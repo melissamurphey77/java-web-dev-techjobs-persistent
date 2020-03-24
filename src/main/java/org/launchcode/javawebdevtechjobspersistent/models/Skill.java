@@ -30,7 +30,7 @@ public class Skill extends AbstractEntity {
 
     public void setDescription(String description) { this.description = description;}
 
-    public List<Job> getJob() {
+    public List<Job> getJobs() {
         return jobs;
     }
 
